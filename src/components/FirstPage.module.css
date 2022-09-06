@@ -1,0 +1,30 @@
+.firstPage{
+    min-height: 100vh;
+    position: relative;
+}
+/* .Navbar{
+    background-color: red;
+} */
+.MenuAndMain{
+    display: flex;
+}
+.Menu{
+    /* background-color: green; */
+    width: 20%;
+    flex: auto;
+}
+.Main{
+    width: 80%;
+    flex: auto;
+    /* background-color: yellow; */
+}
+
+
+/* Responsive 600 */
+@media (max-width:600px) {
+    .Menu{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+}

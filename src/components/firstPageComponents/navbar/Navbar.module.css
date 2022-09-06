@@ -1,0 +1,78 @@
+.navbar{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    padding: 0 24px;
+}
+/* First section of navbar */
+.first{
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    gap:10px;
+    flex: 1 1;
+}
+.first > div{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.first > div > div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.collectionCir{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #3772ff;
+}
+/* Second section of navbar */
+.second{
+    flex: 1 1;
+    text-align: center;
+}
+.inputContainer{
+    /* width: 400px; */
+    width: 80%;
+    height: 32px;
+    background-color: #f7f8fa;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+.second > div input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 40%;
+}
+.searchBtn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+/* Third section of navbar */
+.third{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex: 1 1;
+    justify-content: end;
+}
+.third > div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.third > div >div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
