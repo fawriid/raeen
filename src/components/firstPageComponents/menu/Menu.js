@@ -13,6 +13,12 @@ import orders from "../../../icons/Orders.svg";
 import contacts from "../../../icons/Contacts.svg";
 import inquries from "../../../icons/Inquries.svg";
 import echolab from "../../../icons/Echolab.svg";
+    // icons > app section
+import channels1 from '../../../icons/Channels1.svg'
+import channels2 from '../../../icons/Channels2.svg'
+import channels3 from '../../../icons/Channels3.svg'
+import plus from '../../../icons/Plus.svg'
+import rightArr from '../../../icons/RightArr.svg'
 
 
 const Menu = () => {
@@ -57,13 +63,34 @@ const Menu = () => {
                             key={index}
                             icon={icon}
                             title={title}
-                            arrow
+                            arrow={arrow}
                             badge={badge}
                             badgeColor={badgeColor}
                         />
                     )
                 )}
             </ul>
+            <div className={styles.appSection}>
+                <div>
+                    <p>Apps</p>
+                    <button><img src={plus} alt='pic' /></button>
+                </div>
+                <ul>
+                    <li>
+                        <img src={channels1} alt='pic' />
+                        <p>Websites</p>
+                    </li>
+                    <li>
+                        <img src={channels2} alt='pic' />
+                        <p>Minto</p>
+                    </li>
+                    <li>
+                        <img src={channels3} alt='pic' />
+                        <p>Artman</p>
+                    </li>
+                </ul>
+                <button>View all apps <img src={rightArr} alt='pic' /></button>
+            </div>
         </div>
     );
 };
