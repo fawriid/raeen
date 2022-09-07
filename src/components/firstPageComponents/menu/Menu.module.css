@@ -17,6 +17,7 @@
         border-right: none;
         border-top: 1px solid #EEF0F3;
         padding-top: 0;
+        padding-bottom: 0;
     }
     .menu ul {
         display: flex;
