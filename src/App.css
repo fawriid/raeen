@@ -13,4 +13,7 @@ ul{
         background-color: #ccc;
     }
 }
+button{
+    cursor: pointer;
+}
   
