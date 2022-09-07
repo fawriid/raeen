@@ -2,11 +2,20 @@
     min-height: 100vh;
     position: relative;
 }
+@media (min-width:1600px) {
+    .firstPage{
+        width: 1600px;
+        margin:0 auto;
+        background-color: #fff;
+    }
+}
 /* .Navbar{
     background-color: red;
 } */
 .MenuAndMain{
+    padding-top: 10px;
     display: flex;
+    gap: 30px;
 }
 .Menu{
     /* background-color: green; */
@@ -20,8 +29,16 @@
 }
 
 
-/* Responsive 600 */
-@media (max-width:600px) {
+/* Responsive */
+@media (max-width:1110px) {
+    .Menu{
+        width: 25%;
+    }
+    .Main{
+        width: 75%;
+    }
+}
+@media (max-width:950px) {
     .Menu{
         width: 100%;
         position: absolute;

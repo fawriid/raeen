@@ -5,7 +5,7 @@ import styles from './Main.module.css'
 
 const Main = () => {
     return (
-        <div>
+        <div className={styles.main}>
             Main
         </div>
     );

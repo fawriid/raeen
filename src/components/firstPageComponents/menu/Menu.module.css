@@ -1,0 +1,22 @@
+.menu {
+    /* padding-left: 0 24px; */
+    padding-top: 20px;
+    border-right: 1px solid #ccc;
+    min-height: 100vh;
+    /* overflow: hidden; */
+}
+@media (max-width: 950px) {
+    .menu {
+        width: 100%;
+        min-height: 0;
+        border-right: none;
+        border-top: 1px solid #ccc;
+        padding-top: 0;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}

@@ -5,6 +5,12 @@
     align-items: center;
     height: 48px;
     padding: 0 24px;
+    /* overflow: hidden; */
+}
+@media (max-width:600px) {
+    .navbar{
+        justify-content: center;
+    }
 }
 /* First section of navbar */
 .first{
@@ -18,11 +24,16 @@
     display: flex;
     align-items: center;
     gap:10px;
+    margin-left: 20px;
 }
 .first > div > div{
     display: flex;
     align-items: center;
     gap: 5px;
+}
+.first > div > div p{
+    font-size: 20px;
+    font-weight: 500;
 }
 .collectionCir{
     width: 6px;
@@ -30,6 +41,75 @@
     border-radius: 50%;
     background-color: #3772ff;
 }
+.navbarCollIconRes{
+    display: none;
+}
+.collectionArr{
+    margin-left: 85px;
+}
+.echoLabTitRes{
+    width: 150px;
+    display: none !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+@media (max-width:1460px) {
+    .collectionArr{
+        margin-left: 70px;
+    }
+}
+@media (max-width:1370px) {
+    .collectionArr{
+        margin-left: 60px;
+    }
+}
+@media (max-width:1260px) {
+    .collectionArr{
+        margin-left: 40px;
+    }
+}
+@media (max-width:1200px) {
+    .collectionArr{
+        margin-left: 10px;
+    }
+}
+@media (max-width:1000px) {
+    .collectionArr{
+        margin-left: 0px;
+    }
+}
+@media (max-width:830px) {
+    .navbarCollIcon{
+        display: none;
+    }
+}
+@media (max-width:600px) {
+    .navbarCollIconRes{
+        display: inline-block;
+    }
+    .first > div{
+        display: none;
+    }
+    .echoLabTitRes{
+        display: inline-block !important;
+    }
+    .first{
+        gap: 0;
+    }
+}
+@media (max-width:400px) {
+    .echoLabTitRes{
+        width: 100px;
+    }
+}
+@media (max-width:350px) {
+    .echoLabTitRes{
+        width: 78px;
+    }
+}
+
+
 /* Second section of navbar */
 .second{
     flex: 1 1;
@@ -47,6 +127,11 @@
     gap: 10px;
     margin: 0 auto;
 }
+@media (max-width:1260px) {
+    .inputContainer{
+        width: 90%;
+    }
+}
 .second > div input{
     background-color: transparent;
     border: none;
@@ -57,6 +142,27 @@
     background-color: transparent;
     border: none;
     outline: none;
+}
+.searchBtnRes{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: auto;
+    margin-right: 20px;
+    top: 10px;
+}
+@media (min-width:600px) {
+    .searchBtnRes{
+        display: none;
+    }
+}
+@media (max-width:600px) {
+    .searchBtnRes{
+        display: inline-block;
+    }
+    .inputContainer{
+        display: none;
+    }
 }
 /* Third section of navbar */
 .third{
@@ -75,4 +181,43 @@
     display: flex;
     align-items: center;
     gap: 10px;
+}
+/* 930 */
+@media (max-width:930px) {
+    .navbarProfileName{
+        display: none;
+    }
+}
+/* 630 */
+@media (max-width:630px) {
+    .profileArr{
+        display: none;
+    }
+}
+/* 600 */
+@media (min-width:600px) {
+    .navbarNotRes{
+        display: none;
+    }
+}
+@media (max-width:600px) {
+    .navbarNot{
+        display: none;
+    }
+}
+
+
+
+/* hole res */
+@media (max-width:600px) {
+    .first{
+        flex: none;
+    }
+    .second{
+        flex: none;
+        margin-left: auto;
+    }
+    .third{
+        flex: none;
+    }
 }
