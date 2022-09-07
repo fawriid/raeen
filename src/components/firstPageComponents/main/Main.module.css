@@ -1,3 +1,78 @@
-.main{
-    padding-top: 20px;
+.main {
+    padding-top: 25px;
+}
+.mainTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 30px;
+}
+.mainTitle h5 {
+    font-size: 22px;
+    color: #242328;
+}
+.mainTitle span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #a6e9de;
+
+}
+.main section {
+    margin: 3rem;
+    margin-left: 0;
+}
+.notificationSection{
+    margin-top: 3rem;
+    margin-left: 0;
+}
+@media (max-width:950px) {
+    .main section{
+        margin-right: 30px;
+    }
+    .notificationSection{
+        margin-left: 30px;
+        /* margin-right: 0; */
+    }
+}
+.newNotifBadge {
+    width: 100%;
+    border-bottom: 1px solid #a6e9de;
+    position: relative;
+}
+.newNotifBadge span {
+    width: 50px;
+    height: 24px;
+    padding: 4px 12px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #242328;
+    bottom: 0;
+    background-color: #a6e9de;
+    /* padding: 10px; */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.notifBadge {
+    width: 100%;
+    border-bottom: 1px solid #eef0f3;
+    position: relative;
+}
+.notifBadge span {
+    width: 50px;
+    height: 24px;
+    padding: 4px 12px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #242328;
+    bottom: 0;
+    background-color: #eef0f3;
+    /* padding: 10px; */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }

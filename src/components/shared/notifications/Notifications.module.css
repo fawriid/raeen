@@ -1,0 +1,35 @@
+.notification{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #242328;
+    width: 100%;
+    border: 1px solid #EEF0F3;
+    border-radius: 6px;
+    padding: 16px;
+    margin: 16px 0;
+    margin-left: 0;
+}
+@media (max-width:600px) {
+    .notification{
+        gap: 20px;
+    }
+}
+.notification > div{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.notification span{
+    color: #83909D;
+    font-size: 12px;
+}
+.notification button{
+    margin-left: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
