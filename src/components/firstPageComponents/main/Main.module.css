@@ -30,6 +30,7 @@
 @media (max-width:950px) {
     .main section{
         margin-right: 30px;
+        padding-bottom: 30px;
     }
     .notificationSection{
         margin-left: 30px;
